@@ -46,7 +46,7 @@ header {
 }
 
 header > h1 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color: white;
     font-family: var(--fonte-destaque);
     font-size: 3em;
@@ -70,6 +70,12 @@ nav {
     box-shadow: 0 7px 7px rgba(0, 0, 0, 0.192);
 }
 
+nav #menu-mobile {
+    display: none;
+    color: red;
+    background-color: black;
+}
+
 nav a {
     color: white;
     padding: 10px;
@@ -90,7 +96,7 @@ nav a:active {
 
 main {
     min-width:300px;
-    max-width: 800px;
+    max-width: 890px;
     margin: auto auto 30px auto;
     padding: 20px;
     background-color: white;
@@ -186,8 +192,9 @@ aside h3 {
 
 aside ul {
     list-style-position: inside;
-    list-style-type: '\2714\00A0\00A0';
+    list-style-type: '\00A0\00A0';
     columns: 2;
+    line-height: 25px;
 }
 
 footer {
@@ -206,4 +213,15 @@ footer a {
 footer a:hover {
     text-decoration: underline;
     color: var(--cor1);
+}
+
+@media (max-width: 600px) {
+    nav #menu-mobile {
+        display: block;
+        color: red;
+    }
+
+    #menu-desktop a {
+        display: none;
+    }
 }
