@@ -74,6 +74,7 @@ nav #menu-mobile {
     display: none;
     color: red;
     background-color: black;
+    cursor: pointer;
 }
 
 nav a {
@@ -223,5 +224,9 @@ footer a:hover {
 
     #menu-desktop a {
         display: none;
+    }
+
+    #menu-desktop.active .links {
+        display: block;
     }
 }
