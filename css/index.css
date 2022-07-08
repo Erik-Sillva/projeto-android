@@ -95,6 +95,25 @@ nav a:active {
     color: var(--cor3);
 }
 
+.fa-solid {
+    display: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: var(--cor2);
+    transition: .3s ease-out;
+}
+
+.fa-solid:hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
+}
+
+.fa-solid:active {
+    background-color: var(--cor4);
+    color: var(--cor5);
+}
+
 main {
     min-width:300px;
     max-width: 890px;
@@ -198,6 +217,10 @@ aside ul {
     line-height: 25px;
 }
 
+aside ul .fa-android {
+    color: var(--cor5);
+}
+
 footer {
     background-color: var(--cor5);
     color: white;
@@ -217,16 +240,11 @@ footer a:hover {
 }
 
 @media (max-width: 600px) {
-    nav #menu-mobile {
-        display: block;
-        color: red;
-    }
-
-    #menu-desktop a {
+    .links {
         display: none;
     }
 
-    #menu-desktop.active .links {
-        display: block;
+    .fa-solid {
+        display: inline-block;
     }
 }
